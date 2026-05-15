@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-pr402"
+version = "0.1.0"
+description = "LangChain tools for pr402/x402 protocol — autonomous AI agent payments on Solana"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Miraland Labs", email = "mi@miraland.io" },
+]
+keywords = [
+    "langchain",
+    "x402",
+    "solana",
+    "ai-agents",
+    "pr402",
+    "usdc",
+    "payments",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "langchain-core>=0.3.0",
+    "requests>=2.28.0",
+    "solders>=0.21.0",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/miraland-labs/langchain-pr402"
+Documentation = "https://docs.ipay.sh"
+Repository = "https://github.com/miraland-labs/langchain-pr402"
+Issues = "https://github.com/miraland-labs/langchain-pr402/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/langchain_pr402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
