@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "langchain-pr402"
-version = "0.1.0"
+version = "0.1.1"
 description = "LangChain tools for pr402/x402 protocol — autonomous AI agent payments on Solana"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [
     { name = "Miraland Labs", email = "mi@miraland.io" },
 ]
@@ -26,10 +26,10 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries",
     "Topic :: Office/Business :: Financial",
 ]
@@ -54,7 +54,7 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "W"]
