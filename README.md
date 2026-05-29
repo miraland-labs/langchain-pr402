@@ -105,3 +105,4 @@ wrapper = X402RequestsWrapper(
 - [pr402/x402 Protocol](https://github.com/miraland-labs/x402)
 - [pr402 Facilitator](https://ipay.sh)
 - [Documentation](https://docs.ipay.sh)
+- **MCP hosts (Cursor, Claude Desktop):** [`@pr402/mcp-server`](https://www.npmjs.com/package/@pr402/mcp-server) — see [pr402 agent-tools.json](https://preview.ipay.sh/agent-tools.json)
